@@ -1,0 +1,24 @@
+/* Лого */
+
+.logo {
+  color: #000;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &--accent {
+    color: var(--accent-color);
+  }
+
+  &--white {
+    color: var(--white-text-color);
+  }
+
+  &--secondary {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
