@@ -53,6 +53,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
   &__card {
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
@@ -98,7 +102,7 @@
     flex-basis: calc(100% / 2 - var(--gallery-list-gap));
     margin-right: var(--gallery-list-gap);
     margin-bottom: var(--gallery-list-gap);
-    width: 354px;
+    width: 100%;
 
     &:nth-child(2n) {
       margin-right: 0;
