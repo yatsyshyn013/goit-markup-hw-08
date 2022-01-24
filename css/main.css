@@ -674,6 +674,10 @@ img {
 }
 
 /* Модальное окно */
+.backdrop {
+  overflow-y: scroll;
+}
+
 @media screen and (max-width: 767px) {
   .backdrop {
     position: fixed;
@@ -683,7 +687,6 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 94px 15px;
-    overflow-y: scroll;
   }
   .backdrop--is-hidden {
     visibility: hidden;
