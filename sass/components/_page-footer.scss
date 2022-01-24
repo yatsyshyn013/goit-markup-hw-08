@@ -1,13 +1,16 @@
 /* Футер */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
   background-color: var(--secondary-bg-color);
 
-  // &__container {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
 
   @media screen and (max-width: 767px) {
     // display: block;
@@ -30,6 +33,10 @@
   @media screen and (max-width: 767px) {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    // margin-top: 60px;
   }
 
   &__text {
@@ -81,6 +88,11 @@
 
   @media screen and (max-width: 767px) {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    // margin-top: 65px;
   }
 
   &__invite {
@@ -148,11 +160,27 @@
     align-items: center;
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .subscribe-section__label {
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .subscribe-section__title {
@@ -166,6 +194,16 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
   }
 }
 
@@ -187,7 +225,12 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
+    margin-right: 0;
     width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
   }
 
   &::placeholder {

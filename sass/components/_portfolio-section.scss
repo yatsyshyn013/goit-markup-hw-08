@@ -2,16 +2,23 @@
 /* Портфолио наших раобот */
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 15px;
 }
 
 .portfolio-list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
+.portfolio-list__item:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
 .portfolio-list__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -73,16 +80,62 @@
 }
 
 .gallery-list__item {
-  flex-basis: calc(100% / 3 - var(--gallery-list-gap));
-  margin-right: var(--gallery-list-gap);
-  margin-bottom: var(--gallery-list-gap);
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 3 - var(--gallery-list-gap));
+    // margin-right: var(--gallery-list-gap);
+    margin-bottom: var(--gallery-list-gap);
 
-  &:nth-child(3n) {
-    margin-right: 0;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - var(--gallery-list-gap));
+    margin-right: var(--gallery-list-gap);
+    margin-bottom: var(--gallery-list-gap);
+    width: 354px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    // @media screen and (max-width: 1199px) {
+    //   &:nth-child(2n) {
+    //     margin-right: 0;
+    //   }
+    // }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    flex-basis: calc(100% / 3 - var(--gallery-list-gap));
+    margin-right: var(--gallery-list-gap);
+    margin-bottom: var(--gallery-list-gap);
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+
+    // &:nth-child(2n) {
+    //   margin-right: 30px;
+    // }
+
+    // &:nth-last-child(-n + 2) {
+    //   margin-bottom: var(--gallery-list-gap);
+    // }
   }
 }
 

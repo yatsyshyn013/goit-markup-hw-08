@@ -2,6 +2,7 @@
 
 .team-section {
   background-color: var(--reserv-bg-color);
+  width: 100%;
   // height: 708px;
 }
 .team-list {
@@ -83,7 +84,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
 
