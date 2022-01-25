@@ -368,7 +368,17 @@
 }
 
 .header__networks-link {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 4.2vw;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
