@@ -40,6 +40,10 @@
     // margin-top: 60px;
   }
 
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+
   &__text {
     display: inline-block;
     margin-bottom: 9px;
@@ -95,6 +99,10 @@
     margin-right: 0;
     text-align: center;
     // margin-top: 65px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
   }
 
   &__invite {
@@ -206,6 +214,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-top: 0;
+    text-align: start;
   }
 }
 

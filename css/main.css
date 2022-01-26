@@ -506,7 +506,7 @@ img {
   .contacts__tel {
     text-decoration: none;
     font-weight: 500;
-    font-size: 8.8vw;
+    font-size: 8.6vw;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--accent-color);
@@ -1757,6 +1757,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
+}
+
 .address__text {
   display: inline-block;
   margin-bottom: 9px;
@@ -1816,6 +1822,12 @@ img {
   .footer-community {
     margin-right: 0;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-community {
+    text-align: start;
   }
 }
 
@@ -1985,6 +1997,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe-section__title {
     margin-top: 0;
+    text-align: start;
   }
 }
 
