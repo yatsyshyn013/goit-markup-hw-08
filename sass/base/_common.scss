@@ -1,3 +1,9 @@
+html,
+body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
